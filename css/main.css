@@ -3,6 +3,14 @@
 // ==================================== */
 
 :root {
+  --yellow: #fff500;
+  --blue: #00ffff;
+  --purple: #a800c3;
+}
+
+@font-face {
+  font-family: "NeonOverDrive";
+  src: url("../font/Neon\ Overdrive.woff2") format("woff2");
 }
 
 /* ====================================
@@ -65,7 +73,7 @@ video {
 
 #menuToggle a {
   text-decoration: none;
-  color: #232323;
+  color: #ffffff;
 
   transition: color 0.3s ease;
 }
@@ -100,7 +108,7 @@ video {
   margin-bottom: 5px;
   position: relative;
 
-  background: #cdcdcd;
+  background: var(--yellow);
   border-radius: 3px;
 
   z-index: 1;
@@ -126,7 +134,7 @@ video {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #ffffff;
 }
 
 /*
@@ -155,7 +163,7 @@ video {
   padding: 50px;
   padding-top: 125px;
 
-  background: #ededed;
+  background: #66808e8a;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -182,7 +190,7 @@ video {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid var(--yellow);
   padding: 5px;
   transition: 0.5s;
   border-radius: 50px;
@@ -227,7 +235,7 @@ video {
   transition: 0.5s;
 }
 .menu li a:hover {
-  color: #fff;
+  color: var(--blue);
 }
 
 .menu li {
@@ -243,7 +251,7 @@ li.active {
 }
 
 .menu li.active a {
-  color: #fff;
+  color: var(--blue);
 }
 
 h1 {
@@ -251,14 +259,90 @@ h1 {
   justify-content: center;
 }
 
-.headerbg {
+.background-image {
   background-image: url(../img/CYBERBAR.png);
-  background-size: cover;
+  background-size: contain;
+  padding-bottom: 50px;
 }
 
 .intro {
   text-align: center;
   color: whitesmoke;
-  font-family: sans-serif;
+  font-family: "M PLUS 2", sans-serif;
+  font-weight: 500;
+}
+
+.border-image-y {
+  background-image: url(../img/button.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+.hour {
+  font-family: "NeonOverDrive";
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.border-image-b {
+  background-image: url(../img/Buttonblue.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  width: 75%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 55px;
+  font-family: "NeonOverDrive", sans-serif;
   font-weight: 700;
+  color: whitesmoke;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-family: "NeonOverDrive", sans-serif;
+  font-weight: 700;
+  color: whitesmoke;
+  letter-spacing: 2px;
+  font-size: 45px;
+}
+
+.blue {
+  color: var(--blue);
+  font-size: 70px;
+}
+
+.timer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.purple {
+  color: var(--yellow);
+  font-size: 70px;
+}
+
+.black-body {
+  background-color: black;
+}
+
+.yelow-section {
+  background-image: url(../img/yellow_info.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }

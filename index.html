@@ -6,92 +6,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap-grid.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/java.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="magicscroll/magicscroll.css" />
+    <script src="magicscroll/magicscroll.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=M+PLUS+2:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <bod>
-    <div class="container headerbg">
-      <div class="row">
-        <div class="col-6">
-          <nav role="navigation">
-            <div id="menuToggle">
-              <!--
+  <body>
+    <div class="background-image">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <nav role="navigation">
+              <div id="menuToggle">
+                <!--
               A fake / hidden checkbox is used as click reciever,
               so you can use the :checked selector on it.
               -->
-              <input type="checkbox" />
+                <input type="checkbox" />
 
-              <!--
+                <!--
               Some spans to act as a hamburger.
               
               They are acting like a real hamburger,
               not that McDonalds stuff.
               -->
-              <span></span>
-              <span></span>
-              <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
 
-              <!--
+                <!--
               Too bad the menu has to be inside of the button
               but hey, it's pure CSS magic.
               -->
-              <ul id="menu">
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>Foods</li></a>
-                <a href="#"><li>Info</li></a>
-                <a href="#"><li>Contact</li></a>
-              </ul>
-            </div>
-          </nav>
-        </div>
-        <div class="col-6">
-          <div class="global">
-            <div class="language">
-              <ul class="menu">
-                <li><a href="#">EN</a></li>
-                <li class="active"><a href="#">FR</a></li>
-                <li><a href="#">DE</a></li>
-              </ul>
+                <ul id="menu">
+                  <a href="#"><li>Home</li></a>
+                  <a href="#"><li>Foods</li></a>
+                  <a href="#"><li>Info</li></a>
+                  <a href="#"><li>Contact</li></a>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="col-6">
+            <div class="global">
+              <div class="language">
+                <ul class="menu">
+                  <li><a href="#">EN</a></li>
+                  <li class="active"><a href="#">FR</a></li>
+                  <li><a href="#">DE</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-12">
+        <div class="col-12 title">
           <h1><img src="img/logoneokyoto.png" alt="logo du neokyoto" /></h1>
         </div>
-    </div>
+      </div>
       <div class="row">
-        <div class="col-12 intro">
+        <div class="col-10 offset-1 intro">
           <p>
-            Bienvenue au NeoKyoto, un restaurant atypique dans un univers 
-            dystopique offrant une cuisine japonaise innovante. Découvrez 
-            l’alliance entre tradition et futur, pour une
-            expérience culinaire unique.
+            Bienvenue au NeoKyoto, un restaurant atypique dans un univers
+            dystopique offrant une cuisine japonaise innovante. Découvrez
+            l’alliance entre tradition et futur, pour une expérience culinaire
+            unique.
           </p>
         </div>
-        <div class="col-lg-12 col-10 offset-1">
+        <div class="col-lg-12 offset-lg-0 col-10 offset-1">
           <h2>HORAIRES</h2>
         </div>
       </div>
-        <div class="col-12">Colonne 6</div>
-        <div class="col-12">Colonne 7</div>
-        <div class="col-8 offset-2">Colonne 8</div>
+      <div class="timer">
+        <div class="col-8">
+          <p class="hour border-image-y">11H30 / 14H00</p>
+        </div>
+        <div class="col-8">
+          <p class="hour border-image-b">19H00 / 23h00</p>
+        </div>
+      </div>
+    </div>
+    <div class="black-body">
+      <div class="col-8 offset-2">
+        <h2 class="purple">❖FOOD</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-3">
+          <p>
+            Nos plats sont élaboré par le chef Itadori Nanami venant tout droit
+            de Kyoto au japon nous vous proposons aujourd’hui des plats
+            traditionnelles dresser au gout du jour
+          </p>
+        </div>
       </div>
       <div class="row">
-        <div class="col-lg-3 col-3">Colonne 9</div>
+        <div class="col-4 offset-1"><h3 class="food">NOUILLE</h3></div>
+        <div class="col-12 nouille">
+   
+          <div
+            class="MagicScroll"
+            data-options="mode: cover-flow; height: 275px;"
+          >
+            <a href="/page-1/"><img src="img/nouille_fade.png" /></a>
+            <a href="/page-2/"><img src="img/nouille_normale.png" /></a>
+            <a href="/page-3/"><img src="img/nouille_forte.png" alt="" /></a>
+            <a href="/page-4/"><img src="img/piquant_nouille.png" alt="" /></a>
+          </div>
+        </div>
       </div>
+      <div class="col-12 nouille">
+        <div class="col-4 offset-1"><h3 class="food">SOUPES</h3></div>
+        <div
+          class="MagicScroll"
+          data-options="mode: cover-flow; height: 275px;"
+        >
+          <a href="/page-1/"><img src="img/soupe_fade.png" /></a>
+          <a href="/page-2/"><img src="img/soupe_normale.png" /></a>
+          <a href="/page-3/"><img src="img/soupe_forte.png" alt="" /></a>
+          <a href="/page-4/"><img src="img/Soupe_piquante.png" alt="" /></a>
+        </div>
+      </div>
+      
+      <div class="col-4 offset-1"><h3 class="food">SUSHIS</h3></div>
+    </div><div class="col-12 nouille">
+      <div
+        class="MagicScroll"
+        data-options="mode: cover-flow; height: 275px;"
+      >
+        <a href="/page-1/"><img src="img/sushis_fade.png" /></a>
+        <a href="/page-2/"><img src="img/shushis_normale.png" /></a>
+        <a href="/page-3/"><img src="img/sushis_fort.png" alt="" /></a>
+        <a href="/page-4/"><img src="img/sushis_piquant.png" alt="" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="yelow-section">
       <div class="row">
-        <div class="col-3">Colonne 10</div>
-        <div class="col-3">Colonne 11</div>
-        <div class="col-3">Colonne 12</div>
-        <div class="col-3">Colonne 13</div>
-      </div>
+        <div class="col-12">
+          <h2 class="blue">❖INFO</h2>
+        </div>
       <div class="row">
-        <div class="col-3">Colonne 14</div>
+        <div class="col-4">Colonne 15</div>
+        <div class="col-4">Colonne 16</div>
+        <div class="col-4">Colonne 17</div>
+        <div class="col-4">Colonne 18</div>
+        <div class="col-4">Colonne 18</div>
+        <div class="col-4">Colonne 18</div>
       </div>
-      <div class="row">
-        <div class="col-3">Colonne 15</div>
-        <div class="col-3">Colonne 16</div>
-        <div class="col-3">Colonne 17</div>
-        <div class="col-3">Colonne 18</div>
-      </div>
+    </div>
       <div class="row">
         <div class="col-3">Colonne 19</div>
       </div>
@@ -101,30 +168,30 @@
         <div class="col-3">Colonne 22</div>
         <div class="col-3">Colonne 23</div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-12">Colonne 24</div>
-        <div class="col-lg-4 col-4">Colonne 25</div>
-        <div class="col-lg-4 col-4">Colonne 26</div>
-        <div class="col-lg-4 col-4">Colonne 27</div>
-        <div class="col-lg-4 col-4">Colonne 28</div>
-        <div class="col-lg-4 col-4">Colonne 29</div>
-        <div class="col-lg-4 col-4">Colonne 30</div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-12">Colonne 24</div>
+          <div class="col-lg-4 col-4">Colonne 25</div>
+          <div class="col-lg-4 col-4">Colonne 26</div>
+          <div class="col-lg-4 col-4">Colonne 27</div>
+          <div class="col-lg-4 col-4">Colonne 28</div>
+          <div class="col-lg-4 col-4">Colonne 29</div>
+          <div class="col-lg-4 col-4">Colonne 30</div>
+        </div>
+        <div class="row">
+          <div class="col-12">Colonne 31</div>
+          <div class="col-3">Colonne 32</div>
+          <div class="col-3">Colonne 33</div>
+          <div class="col-3">Colonne 34</div>
+          <div class="col-3">Colonne 35</div>
+          <div class="col-lg-5 col-12">Colonne 36</div>
+          <div class="col-lg-7 col-12">Colonne 37</div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-12">Colonne 31</div>
-        <div class="col-3">Colonne 32</div>
-        <div class="col-3">Colonne 33</div>
-        <div class="col-3">Colonne 34</div>
-        <div class="col-3">Colonne 35</div>
-        <div class="col-lg-5 col-12">Colonne 36</div>
-        <div class="col-lg-7 col-12">Colonne 37</div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">Colonne 38</div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">Colonne 38</div>
+        </div>
       </div>
     </div>
   </body>
