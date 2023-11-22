@@ -211,6 +211,10 @@ video {
   top: 0;
 }
 
+.spacer {
+  margin-bottom: 30px;
+  padding-top: 25px;
+}
 .global {
   display: flex;
   justify-content: flex-end;
