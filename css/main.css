@@ -40,13 +40,13 @@ body {
   margin-top: 16px;
 }
 
-.row > .col,
+/* .row > .col,
 .row > [class^="col-"] {
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
-}
+ background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.2); */
+/* } */
 
 a {
   color: inherit;
@@ -270,6 +270,17 @@ h1 {
   color: whitesmoke;
   font-family: "M PLUS 2", sans-serif;
   font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.food-intro {
+  color: whitesmoke;
+  font-family: "M PLUS 2", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 100px;
+  margin-top: 50px;
 }
 
 .border-image-y {
@@ -301,6 +312,7 @@ h1 {
 
 h1 {
   width: 75%;
+  margin-bottom: 50px;
 }
 
 h2 {
@@ -310,6 +322,7 @@ h2 {
   font-weight: 700;
   color: whitesmoke;
   letter-spacing: 2px;
+  margin-bottom: 50px;
 }
 
 h3 {
@@ -318,10 +331,11 @@ h3 {
   color: whitesmoke;
   letter-spacing: 2px;
   font-size: 45px;
+  margin-bottom: 50px;
 }
 
 .blue {
-  color: var(--blue);
+  color: var(--purple);
   font-size: 70px;
 }
 
@@ -329,6 +343,7 @@ h3 {
   display: flex;
   flex-flow: column;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .purple {
@@ -340,11 +355,18 @@ h3 {
   background-color: black;
 }
 
-.yelow-section {
+.yellow-section-top {
   background-image: url(../img/yellow_info.png);
+  margin-top: 50px;
+  padding-top: 30px;
+  background-position: top;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: contain;
+}
+
+.yellow-section-low {
+  background-color: var(--yellow);
+  margin-bottom: 100px;
 }
 
 .contact {
@@ -376,4 +398,24 @@ p {
 .date {
   font-size: 17;
   font-weight: 500;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+}
+
+.purplereal {
+  color: var(--blue);
+}
+
+.medal {
+  width: 40%;
+}
+
+.info-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
