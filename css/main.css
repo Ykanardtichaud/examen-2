@@ -355,13 +355,8 @@ h3 {
   font-size: 70px;
 }
 
-.black-body {
-  background-color: black;
-}
-
 .yellow-section-top {
   background-image: url(../img/yellow_info.png);
-  margin-top: 50px;
   padding-top: 30px;
   background-position: top;
   background-repeat: no-repeat;
@@ -369,19 +364,22 @@ h3 {
 }
 
 .yellow-section-low {
-  background-color: var(--yellow);
+  background-color: #f1e800;
   margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .contact {
   margin: 0;
   padding: 0;
+  padding-bottom: 75px;
 }
 
 .order {
   display: flex;
   justify-content: center;
 }
+
 .info {
   text-align: center;
 }
@@ -400,10 +398,19 @@ p {
 }
 
 .date {
-  font-size: 17;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
+.time {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.calendar {
+  margin-bottom: 50px;
+}
 .map {
   display: flex;
   justify-content: center;
@@ -422,4 +429,15 @@ p {
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.background {
+  background-color: black;
+  padding-bottom: 50px;
+}
+
+.pointiller {
+  background-image: url(../img/background.png);
+  background-position: center;
+  background-size: cover;
 }
