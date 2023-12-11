@@ -16,7 +16,6 @@
   </head>
   <body>
   <div>
-  
     <div class="background-image">
       <div class="container">
         <div class="row">  
@@ -43,17 +42,17 @@
               Too bad the menu has to be inside of the button
               but hey, it's pure CSS magic.
               -->
-              <ul id="menu">
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>Foods</li></a>
-                <a href="#"><li>Info</li></a>
-                <a href="#"><li>Contact</li></a>
+              <ul id="menu"
+                <a href="#home"><li>Home</li></a>
+                <a href="#foods"><li>Foods</li></a>
+                <a href="#info"><li>Info</li></a>
+                <a href="#map"><li>Map</li></a>
               </ul>
             </div>
           </div>
           </nav>
-          <div class="col-6 spacer">
-            <div class="global">
+          <div id="Home" class="col-6 spacer">
+            <div id="top" class="global">
               <div class="language">
                 <ul class="menu">
                   <li><a href="#">EN</a></li>
@@ -93,7 +92,7 @@
     <div class="pointiller">
     <div class="black-body">
       <div class="col-8 offset-2">
-        <h2 class="purple">❖FOOD</h2>
+        <h2 id="foods" class="purple">❖FOODS</h2>
       </div>
       <div class="row">
         <div class="col-lg-4 offset-lg-1 col-12 offset-0">
@@ -138,7 +137,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 class="blue">❖INFO</h2>
+            <h2 id="info" class="blue">❖INFO</h2>
           </div>
           <div class="row">
             <div class="col-4 info-content">
@@ -202,7 +201,11 @@
     </div>
   </div>
 </div>
+<div class="scroller-up">
+  <a class="top-page" href="#top">⬆</a>
+</div>
   <iframe
+  id="map"
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87382.61119707122!2d7.142029305815587!3d46.81008513154977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e6ecd8d5a7d2f%3A0xbbe5d1f6b937c32e!2sFribourg!5e0!3m2!1sfr!2sch!4v1700657223658!5m2!1sfr!2sch"
     width="1440"
     height="400"
