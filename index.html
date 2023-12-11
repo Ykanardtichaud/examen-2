@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap-grid.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="json/custom_map.json">
-    <script src="js/java.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="magicscroll/magicscroll.css" />
     <script src="magicscroll/magicscroll.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=M+PLUS+2:wght@400;500;700&display=swap"
@@ -99,7 +96,7 @@
         <h2 class="purple">❖FOOD</h2>
       </div>
       <div class="row">
-        <div class="col-lg-4 offset-lg-1 col-3 offset-0">
+        <div class="col-lg-4 offset-lg-1 col-12 offset-0">
           <p class="food-intro">
             Nos plats sont élaboré par le chef Itadori Nanami venant tout droit
             de Kyoto au japon nous vous proposons aujourd’hui des plats
@@ -110,40 +107,31 @@
       <div class="row">
         <div class="col-4 offset-1"><h3 class="food">NOUILLE</h3></div>
         <div class="col-12 nouille">
-          <div
-            class="MagicScroll"
-            data-options="mode: cover-flow; height: 275px;"
-          >
-            <a href="/page-1/"><img src="img/nouille_fade.png" /></a>
-            <a href="/page-2/"><img src="img/nouille_normale.png" /></a>
-            <a href="/page-3/"><img src="img/nouille_forte.png" alt="" /></a>
-            <a href="/page-4/"><img src="img/piquant_nouille.png" alt="" /></a>
-          </div>
+        <div class="carousel-container">
+          <div class="carousel-slide"><img src="img/nouille_fade.png" alt=""></div>
+          <div class="carousel-slide"><img src="img/nouille_normale.png" alt=""></div>
+          <div class="carousel-slide"><img src="img/nouille_forte.png" alt=""></div>
+          <div class="carousel-slide"><img src="img/piquant_nouille.png" alt=""></div>
         </div>
       </div>
-      <div class="col-12 nouille">
         <div class="col-4 offset-1"><h3 class="food">SOUPES</h3></div>
-        <div
-          class="MagicScroll"
-          data-options="mode: cover-flow; height: 275px;"
-        >
-          <a href="/page-1/"><img src="img/soupe_fade.png" /></a>
-          <a href="/page-2/"><img src="img/soupe_normale.png" /></a>
-          <a href="/page-3/"><img src="img/soupe_forte.png" alt="" /></a>
-          <a href="/page-4/"><img src="img/Soupe_piquante.png" alt="" /></a>
+        <div class="col-12 nouille">
+        <div class="carousel-container">
+          <div class="carousel-slide"><img src="img/soupe_fade.png" alt=""></div>
+          <div class="carousel-slide"><img src="img/soupe_normale.png" alt=""></div>
+          <div class="carousel-slide"><img src="img/soupe_forte.png" alt=""></div>
+          <div class="carousel-slide"><img src="img/soupe_piquante.png" alt=""></div>
         </div>
-      </div>  
-       <div class="col-12 nouille"></div>
-       <div class="background">
-      <div class="col-4 offset-1"><h3 class="food">SUSHIS</h3></div>
-      <div class="MagicScroll" data-options="mode: cover-flow; height: 275px;">
-        <a href="/page-1/"><img src="img/sushis_fade.png" /></a>
-        <a href="/page-2/"><img src="img/shushis_normale.png" /></a>
-        <a href="/page-3/"><img src="img/sushis_fort.png" alt="" /></a>
-        <a href="/page-4/"><img src="img/sushis_piquant.png" alt="" /></a>
       </div>
-    </div>
-  </div>
+        <div class="col-4 offset-1"><h3 class="food">SUSHIS</h3></div>
+        <div class="col-12 sushis">
+        <div class="carousel-container">
+          <div class="carousel-slide"><img src="img/sushis_fade.png" alt=""></div>
+          <div class="carousel-slide"><img src="img/soupe_normale.png" alt=""></div>
+          <div class="carousel-slide"><img src="img/soupe_forte.png" alt=""></div>
+          <div class="carousel-slide"><img src="img/sushis_piquant.png" alt=""></div>
+        </div>
+      </div> 
 </div>
   <div class="yellow-section-top">
     <div class="yellow-section-low">
@@ -217,7 +205,7 @@
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87382.61119707122!2d7.142029305815587!3d46.81008513154977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e6ecd8d5a7d2f%3A0xbbe5d1f6b937c32e!2sFribourg!5e0!3m2!1sfr!2sch!4v1700657223658!5m2!1sfr!2sch"
     width="1440"
-    height="300"
+    height="400"
     style="border: 0"
     allowfullscreen="1"
     loading="lazy"
